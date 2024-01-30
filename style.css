@@ -1,0 +1,203 @@
+
+
+.dropbtn {
+    background-color: transparent;
+    color: blue;
+    padding: 16px;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
+      .dropdown-content {
+          display: inline-block;
+          position: absolute; 
+     
+        }
+  
+  
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #C9D7DD;
+  }
+  
+
+
+.container {
+    margin-top: 50px;
+    display: grid;
+    gap: 1em;
+    grid-template-areas: 
+    "uno"
+    "tre"
+    "quattro"
+    "due";
+    }
+
+    .primoelemento:nth-child(1) {
+        grid-area: uno;
+        }
+        
+        .secondoelemento:nth-child(2) {
+          grid-area: due;
+          }
+        
+        .terzoelemento:nth-child(3) {
+            grid-area: tre;
+            }
+        
+        .quartoelemento:nth-child(4) {
+            grid-area: quattro;
+        }
+
+        .immagine-principale {
+            height: 100%;
+            width: 100%;
+            }
+   
+
+        .grandetitolo {
+        text-align: left;
+        font-size: 65px;
+        color: #0F1035;
+        }
+
+        .sommario {
+        margin-top: -30px;
+        font-size: 20px;
+        color: #637A9F;   
+        }
+
+        .read {
+            background-color: #FF6969;
+            color: aliceblue;
+            margin-top: 10px;
+            width: 150px;
+            height: 50px;
+            border: none;
+        }
+
+        .secondoelemento {
+            background-color: #0F1035;
+            color: white;
+            padding: 5%;
+            margin-top: 20px;
+        }
+
+
+        .secondoelemento h1 {
+        color: #E8C872;
+        
+        }
+
+        .title {
+        font-weight: bold;
+        font-size: 20px;
+        }
+
+        .secondocontainer {
+            margin-top: 30px;
+            display: grid;
+            gap: 1em;
+            text-align: center;
+            grid-template-areas: 
+            "a"
+            "b"
+            "c";
+          }
+    
+    
+    
+         
+    
+         
+    
+    
+          .primaimmagine:nth-child(1) {
+            grid-area: a;
+            }
+            
+            .socondaimmagine:nth-child(2) {
+              grid-area: b;
+              }
+            
+            .terzaimmagine:nth-child(3) {
+                grid-area: c;
+                }
+    
+          .imgone {
+          float: left;
+         
+          }
+
+          @media (min-width: 1040px) {
+
+            body {
+            margin: 3%
+            }
+            .container {
+                grid-template-areas: 
+                "uno uno . due"
+                "tre quattro . ."
+                }
+                
+                .secondocontainer {
+                    grid-template-areas: 
+                    "a  b  c"
+                  }   
+
+                  .secondocontainer {
+                margin-top: 0px;
+                margin-bottom: 20px;
+                  }
+
+.immagine-principale {
+height: 50%;
+width: 100%;
+} 
+
+
+.secondoelemento {
+margin-top: 0;
+margin-bottom: 80%;
+padding: 3%;
+}
+
+.terzoelemento {
+margin-top: -90%;
+}
+
+.quartoelemento {
+    margin-top: -80%;
+    }
+          }
